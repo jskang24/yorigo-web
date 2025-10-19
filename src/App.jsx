@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { translations } from './translations';
 import yorigoHome from './assets/Yorigo_home.png';
+import yorigoRecipes from './assets/Yorigo_recipes.png';
+import yorigoCart from './assets/Yorigo_cart.png';
 import './App.css';
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
           <div className="hero-text">
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
-            <button className="cta-button">{t.hero.cta}</button>
+            <a href="https://www.youtube.com/watch?v=FEcT02I3IYA" target="_blank" rel="noopener noreferrer" className="cta-button">{t.hero.cta}</a>
           </div>
           <div className="hero-image">
             <div className="phone-mockup">
@@ -58,26 +60,52 @@ function App() {
         <h2 className="section-title">{t.discover.title}</h2>
         <p className="section-subtitle">{t.discover.subtitle}</p>
         <div className="cards-container">
-          <div className="card">
-            <div className="card-image-placeholder">
-              <span>Screen recording<br />of gathering link<br />from tiktok</span>
+          <div className="problem-solution-card">
+            <div className="card-problem">
+              <h3 className="card-title">{t.discover.card1Title}</h3>
+              <p className="problem-text">{t.discover.card1Problem}</p>
             </div>
-            <h3 className="card-title">{t.discover.card1Title}</h3>
-            <p className="card-text">{t.discover.card1Text}</p>
+            <div className="arrow-divider">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#FF861C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <div className="card-solution">
+              <span className="solution-label">Yorigo Solution</span>
+              <p className="solution-text">{t.discover.card1Solution}</p>
+            </div>
           </div>
-          <div className="card">
-            <div className="card-image-placeholder">
-              <span>loading analyzing<br />animation of stuff</span>
+          
+          <div className="problem-solution-card">
+            <div className="card-problem">
+              <h3 className="card-title">{t.discover.card2Title}</h3>
+              <p className="problem-text">{t.discover.card2Problem}</p>
             </div>
-            <h3 className="card-title">{t.discover.card2Title}</h3>
-            <p className="card-text">{t.discover.card2Text}</p>
-      </div>
-      <div className="card">
-            <div className="card-image-placeholder">
-              <span>list of recipe and<br />the shopping cart</span>
+            <div className="arrow-divider">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#FF861C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
-            <h3 className="card-title">{t.discover.card3Title}</h3>
-            <p className="card-text">{t.discover.card3Text}</p>
+            <div className="card-solution">
+              <span className="solution-label">Yorigo Solution</span>
+              <p className="solution-text">{t.discover.card2Solution}</p>
+            </div>
+          </div>
+          
+          <div className="problem-solution-card">
+            <div className="card-problem">
+              <h3 className="card-title">{t.discover.card3Title}</h3>
+              <p className="problem-text">{t.discover.card3Problem}</p>
+            </div>
+            <div className="arrow-divider">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#FF861C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <div className="card-solution">
+              <span className="solution-label">Yorigo Solution</span>
+              <p className="solution-text">{t.discover.card3Solution}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -97,52 +125,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <div className="recipe-content">
-                  <div className="recipe-header">레시피</div>
-                  <div className="recipe-steps-list">
-                    <div className="step-item">
-                      <span className="step-number">1</span>
-                      <span className="step-text">냄비에 물과 200g의 대구살을 넣어 끓여서 삶아요.</span>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">2</span>
-                      <span className="step-text">물 2컵을 부은 끓입니다.</span>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">3</span>
-                      <span className="step-text">무를 1인분 넣고 보글더 삶립니다.</span>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">4</span>
-                      <span className="step-text">다진, 고추가루, 간장, 산장 마요네즈를 고고 간을 합니다.</span>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">5</span>
-                      <span className="step-text">수시로 다 끓은 후 물을 봅니다.</span>
-                    </div>
-                  </div>
-                  <div className="nutrition-info">
-                    <div className="nutrition-title">영양분석 (1인분)</div>
-                    <div className="nutrition-grid">
-                      <div className="nutrition-item">
-                        <div className="nutrition-value">320</div>
-                        <div className="nutrition-label">칼로리 (kcal)</div>
-                      </div>
-                      <div className="nutrition-item">
-                        <div className="nutrition-value">25g</div>
-                        <div className="nutrition-label">단백질</div>
-                      </div>
-                      <div className="nutrition-item">
-                        <div className="nutrition-value">15g</div>
-                        <div className="nutrition-label">탄수화물</div>
-                      </div>
-                      <div className="nutrition-item">
-                        <div className="nutrition-value">18g</div>
-                        <div className="nutrition-label">지방</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img src={yorigoHome} alt="Yorigo Home Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -161,44 +144,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <div className="recipe-detail-content">
-                  <div className="recipe-detail-header">
-                    <span className="back-btn">← 요리고</span>
-                    <button className="save-btn">플레이보</button>
-                  </div>
-                  <div className="recipe-detail-title">김치째개</div>
-                  <div className="recipe-detail-meta">320 kcal • 인분 불분: ▲</div>
-                  <div className="video-placeholder">
-                    <div className="play-button">▶</div>
-                    <div className="video-text">영상 시작하기</div>
-                  </div>
-                  <div className="serving-control">
-                    <span>몇 프로 (인분)</span>
-                    <div className="counter">
-                      <button>-</button>
-                      <span>2</span>
-                      <button>+</button>
-                    </div>
-                  </div>
-                  <div className="ingredients-list">
-                    <div className="ingredients-title">재료</div>
-                    <div className="ingredient-item">
-                      <span className="ingredient-icon">🥩</span>
-                      <span className="ingredient-name">돼지</span>
-                      <span className="ingredient-amount">300g/g</span>
-                    </div>
-                    <div className="ingredient-item">
-                      <span className="ingredient-icon">🥬</span>
-                      <span className="ingredient-name">배추김치</span>
-                      <span className="ingredient-amount">150g/g</span>
-                    </div>
-                    <div className="ingredient-item">
-                      <span className="ingredient-icon">🧄</span>
-                      <span className="ingredient-name">무우</span>
-                      <span className="ingredient-amount">반모</span>
-                    </div>
-                  </div>
-                </div>
+                <img src={yorigoRecipes} alt="Yorigo Recipes Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -217,10 +163,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <div className="placeholder-content">
-                  <span>PLACEHOLDER</span>
-                  <p>Shopping List & Meal Planning Interface</p>
-                </div>
+                <img src={yorigoCart} alt="Yorigo Shopping Cart Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>

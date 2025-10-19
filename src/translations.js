@@ -2,44 +2,47 @@ export const translations = {
   en: {
     nav: {
       title: "Yorigo",
-      discover: "Discover",
+      discover: "Why Us?",
       benefits: "Benefits",
-      story: "Story",
+      story: "How?",
       faq: "FAQ"
     },
     hero: {
       title: "Eat What You See",
-      subtitle: "Yorigo brings smart meal planning, cost-savvy shopping, and effortless cooking to every home kitchen",
-      cta: "Watch Demo"
+      subtitle: "Yorigo brings smart meal planning, cost-savvy shopping, and effortless cooking to every home kitchen.",
+      cta: "See Demo"
     },
     discover: {
-      title: "Discover from Social Media",
-      subtitle: "Find recipes from your favorite platforms",
-      card1Title: "Screen Recording",
-      card1Text: "Capture cooking videos directly from TikTok and other platforms",
-      card2Title: "AI-Powered Analysis",
-      card2Text: "Using AI to save time and extract recipes instantly",
-      card3Title: "Smart Shopping",
-      card3Text: "Get recipe lists and shopping carts automatically generated"
+      title: "Why Yorigo?",
+      subtitle: "We solve the real problems that start before you even enter the kitchen",
+      card1Title: "Save 45+ Minutes Per Week",
+      card1Problem: "40%+ of people waste 45 minutes weekly on multiple shopping trips",
+      card1Solution: "Plan your entire week in one click and shop once with an optimized list",
+      card2Title: "Stop Paying 67% More",
+      card2Problem: "Small-portion ingredients cost up to 67% more than bulk",
+      card2Solution: "Get exact quantities you need at bulk prices through intelligent meal planning",
+      card3Title: "End Food Waste",
+      card3Problem: "313 million KG wasted annually from unused ingredients",
+      card3Solution: "Use every ingredient across multiple recipes with zero waste optimization"
     },
     benefits: {
-      label: "Health in your",
-      benefit1Title: "In-depth recipes & nutritional grading",
-      benefit1Description: "Get detailed nutritional information and health grades for every recipe. Make informed decisions about what you cook and eat.",
-      benefit2Title: "Easy-to-read recipes",
-      benefit2Description: "Follow along with clear, step-by-step instructions and video guides. Cooking has never been more intuitive.",
-      benefit3Title: "Smart meal planning",
-      benefit3Description: "Plan your meals for the week and generate shopping lists automatically. Save time and reduce food waste."
+      label: "Our Solution",
+      benefit1Title: "One-Click Recipes from Videos",
+      benefit1Description: "Watch a cooking video and instantly get a complete recipe with ingredients, steps, and nutritional information. No more pausing and rewinding.",
+      benefit2Title: "Optimized Weekly Meal Plans",
+      benefit2Description: "Select multiple recipes for your week. Yorigo intelligently combines ingredients across recipes to minimize waste and maximize savings.",
+      benefit3Title: "Smart Shopping Cart",
+      benefit3Description: "Get the exact quantities you need at optimized prices. No more buying small expensive portions or throwing away unused ingredients."
     },
     ourValue: {
-      title: "Our Values",
-      subtitle: "What Makes Yorigo Special",
-      value1Title: "Authenticity",
-      value1Text: "Preserve the authentic taste of recipes from around the world",
-      value2Title: "Simplicity",
-      value2Text: "Make cooking accessible to everyone, regardless of skill level",
-      value3Title: "Health",
-      value3Text: "Provide transparency about nutritional content and health impact"
+      title: "How It Works",
+      subtitle: "From watching to cooking in three simple steps",
+      value1Title: "1. Share Any Recipe Video",
+      value1Text: "See a recipe on TikTok, Instagram, or YouTube? Share it to Yorigo and we'll extract ingredients, steps, and nutrition instantly.",
+      value2Title: "2. Build Your Weekly Plan",
+      value2Text: "Select multiple recipes for your week. Our AI combines ingredients intelligently to minimize waste and maximize savings.",
+      value3Title: "3. Shop Smart, Cook Easy",
+      value3Text: "Get a single optimized shopping list with exact quantities. No more multiple trips or unused ingredients."
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -70,44 +73,47 @@ export const translations = {
   ko: {
     nav: {
       title: "요리고",
-      discover: "Discover",
+      discover: "Why Us?",
       benefits: "Benefits",
-      story: "Story",
+      story: "How?",
       faq: "FAQ"
     },
     hero: {
       title: "보이는 그대로 식탁에",
       subtitle: "요리고는 모든 가정의 주방에 스마트한 식단 계획, 가성비 높은 장보기, 그리고 손쉬운 요리법을 제공합니다.",
-      cta: "데모 보러가기"
+      cta: "데모 보기"
     },
     discover: {
-      title: "소셜 미디어에서 식사로",
-      subtitle: "좋아하는 플랫폼에서 레시피 찾기",
-      card1Title: "화면 녹화",
-      card1Text: "틱톡 및 기타 플랫폼에서 직접 요리 동영상 캡처",
-      card2Title: "AI 기반 분석",
-      card2Text: "AI를 사용하여 시간을 절약하고 레시피를 즉시 추출",
-      card3Title: "스마트 쇼핑",
-      card3Text: "레시피 목록과 장바구니가 자동으로 생성됩니다"
+      title: "왜 요리고인가?",
+      subtitle: "주방에 들어가기도 전에 시작되는 진짜 문제를 해결합니다",
+      card1Title: "매주 45분 이상 절약",
+      card1Problem: "40% 이상이 여러 번 장보기에 주당 45분을 낭비합니다",
+      card1Solution: "한 번의 클릭으로 일주일 전체를 계획하고 최적화된 목록으로 한 번만 쇼핑하세요",
+      card2Title: "67% 추가 비용 절감",
+      card2Problem: "소포장 식재료는 대량 구매 대비 최대 67% 더 비쌉니다",
+      card2Solution: "지능적인 식단 계획을 통해 필요한 정확한 양을 대량 가격으로 받으세요",
+      card3Title: "식재료 낭비 종료",
+      card3Problem: "사용하지 않은 재료로 매년 3억 1300만 KG이 낭비됩니다",
+      card3Solution: "낭비 제로 최적화로 여러 레시피에 걸쳐 모든 재료를 사용하세요"
     },
     benefits: {
-      label: "건강을 손안에",
-      benefit1Title: "심층 레시피 및 영양 등급",
-      benefit1Description: "모든 레시피에 대한 자세한 영양 정보와 건강 등급을 받아보세요. 요리하고 먹는 것에 대해 정보에 입각한 결정을 내리세요.",
-      benefit2Title: "읽기 쉬운 레시피",
-      benefit2Description: "명확한 단계별 지침과 비디오 가이드를 따라하세요. 요리가 이보다 더 직관적일 수 없습니다.",
-      benefit3Title: "스마트 식단 계획",
-      benefit3Description: "일주일 동안의 식사를 계획하고 장보기 목록을 자동으로 생성하세요. 시간을 절약하고 음식물 낭비를 줄이세요."
+      label: "우리의 솔루션",
+      benefit1Title: "영상에서 원클릭 레시피로",
+      benefit1Description: "요리 영상을 보고 즉시 재료, 단계, 영양 정보가 포함된 완전한 레시피를 받아보세요. 더 이상 일시정지와 되감기가 필요 없습니다.",
+      benefit2Title: "최적화된 주간 식단 계획",
+      benefit2Description: "일주일치 여러 레시피를 선택하세요. 요리고가 레시피 간 재료를 지능적으로 결합하여 낭비를 최소화하고 절약을 극대화합니다.",
+      benefit3Title: "스마트 장바구니",
+      benefit3Description: "최적화된 가격으로 필요한 정확한 양만 받아보세요. 더 이상 비싼 소포장을 사거나 쓰지 않은 재료를 버리지 마세요."
     },
     ourValue: {
-      title: "Story",
-      subtitle: "최고의 팀이 모여 요리고를 최고로 만듭니다",
-      value1Title: "진정성",
-      value1Text: "전 세계 레시피의 정통 맛을 보존합니다",
-      value2Title: "단순성",
-      value2Text: "기술 수준에 관계없이 모든 사람이 요리에 접근할 수 있도록 합니다",
-      value3Title: "건강",
-      value3Text: "영양 성분 및 건강 영향에 대한 투명성 제공"
+      title: "작동 방식",
+      subtitle: "시청에서 요리까지 세 가지 간단한 단계",
+      value1Title: "1. 레시피 영상 공유",
+      value1Text: "TikTok, Instagram, YouTube에서 레시피를 보셨나요? 요리고에 공유하면 재료, 단계, 영양 정보를 즉시 추출합니다.",
+      value2Title: "2. 주간 계획 구축",
+      value2Text: "일주일치 여러 레시피를 선택하세요. AI가 낭비를 최소화하고 절약을 극대화하도록 재료를 지능적으로 결합합니다.",
+      value3Title: "3. 스마트 쇼핑, 간편 요리",
+      value3Text: "정확한 양이 포함된 단일 최적화 장보기 목록을 받으세요. 더 이상 여러 번 방문하거나 사용하지 않은 재료가 없습니다."
     },
     faq: {
       title: "자주 묻는 질문",
