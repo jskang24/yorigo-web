@@ -10,7 +10,9 @@ export const translations = {
     hero: {
       title: "Eat What You See",
       subtitle: "Yorigo brings smart meal planning, cost-savvy shopping, and effortless cooking to every home kitchen.",
-      cta: "See Demo"
+      cta: "See Demo",
+      pitchDeck: "Pitch Deck",
+      waitlist: "Join Waitlist"
     },
     discover: {
       title: "Why Yorigo?",
@@ -36,13 +38,15 @@ export const translations = {
     },
     ourValue: {
       title: "How It Works",
-      subtitle: "From watching to cooking in three simple steps",
-      value1Title: "1. Share Any Recipe Video",
-      value1Text: "See a recipe on TikTok, Instagram, or YouTube? Share it to Yorigo and we'll extract ingredients, steps, and nutrition instantly.",
-      value2Title: "2. Build Your Weekly Plan",
-      value2Text: "Select multiple recipes for your week. Our AI combines ingredients intelligently to minimize waste and maximize savings.",
-      value3Title: "3. Shop Smart, Cook Easy",
-      value3Text: "Get a single optimized shopping list with exact quantities. No more multiple trips or unused ingredients."
+      subtitle: "From discovery to dining",
+      value1Title: "Share Videos",
+      value1Text: "TikTok • Instagram • YouTube",
+      value2Title: "Recipe Analysis",
+      value2Text: "AI extracts ingredients & steps",
+      value3Title: "Discover & Plan",
+      value3Text: "Browse community recipes • Build your weekly menu",
+      value4Title: "Shop Once",
+      value4Text: "Optimized list • Zero waste"
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -53,19 +57,15 @@ export const translations = {
         },
         {
           question: "Is Yorigo free to use?",
-          answer: "Yes! Yorigo offers a free plan with essential features. We also offer premium plans with advanced features like unlimited recipe saves, meal planning, and more."
+          answer: "Yes, Yorigo is completely free with all features!"
         },
         {
           question: "Where can I download Yorigo?",
-          answer: "Yorigo will be available on both iOS App Store and Google Play Store. Sign up for our waitlist to be notified when we launch!"
+          answer: "The app is currently in development. We'll be launching an open beta soon after internal testing! Sign up for our waitlist to be notified when we launch!"
         },
         {
           question: "How does the cart work in Yorigo?",
           answer: "When you save a recipe, Yorigo automatically generates a shopping list with all the ingredients you need. You can adjust quantities, check off items as you shop, and even share the list with others."
-        },
-        {
-          question: "Can I edit my recipes in Yorigo?",
-          answer: "Absolutely! You can customize any recipe by adjusting ingredients, changing serving sizes, adding notes, or modifying cooking instructions to match your preferences."
         }
       ]
     }
@@ -81,7 +81,9 @@ export const translations = {
     hero: {
       title: "보이는 그대로 식탁에",
       subtitle: "요리고는 모든 가정의 주방에 스마트한 식단 계획, 가성비 높은 장보기, 그리고 손쉬운 요리법을 제공합니다.",
-      cta: "데모 보기"
+      cta: "데모 보기",
+      pitchDeck: "피치덱",
+      waitlist: "베타 테스터 등록"
     },
     discover: {
       title: "왜 요리고인가?",
@@ -107,13 +109,15 @@ export const translations = {
     },
     ourValue: {
       title: "작동 방식",
-      subtitle: "시청에서 요리까지 세 가지 간단한 단계",
-      value1Title: "1. 레시피 영상 공유",
-      value1Text: "TikTok, Instagram, YouTube에서 레시피를 보셨나요? 요리고에 공유하면 재료, 단계, 영양 정보를 즉시 추출합니다.",
-      value2Title: "2. 주간 계획 구축",
-      value2Text: "일주일치 여러 레시피를 선택하세요. AI가 낭비를 최소화하고 절약을 극대화하도록 재료를 지능적으로 결합합니다.",
-      value3Title: "3. 스마트 쇼핑, 간편 요리",
-      value3Text: "정확한 양이 포함된 단일 최적화 장보기 목록을 받으세요. 더 이상 여러 번 방문하거나 사용하지 않은 재료가 없습니다."
+      subtitle: "발견에서 식사까지",
+      value1Title: "영상 공유",
+      value1Text: "틱톡 • 인스타그램 • 유튜브",
+      value2Title: "레시피 분석",
+      value2Text: "AI가 재료와 단계 추출",
+      value3Title: "발견 및 계획",
+      value3Text: "커뮤니티 레시피 탐색 • 주간 메뉴 구성",
+      value4Title: "한 번만 쇼핑",
+      value4Text: "최적화된 목록 • 낭비 제로"
     },
     faq: {
       title: "자주 묻는 질문",
@@ -124,20 +128,16 @@ export const translations = {
         },
         {
           question: "요리고는 무료로 사용할 수 있나요?",
-          answer: "네! 요리고는 필수 기능이 포함된 무료 플랜을 제공합니다. 무제한 레시피 저장, 식단 계획 등 고급 기능이 포함된 프리미엄 플랜도 제공합니다."
+          answer: "네, 요리고는 모든 기능이 무료입니다!"
         },
         {
           question: "요리고는 어디서 다운로드할 수 있나요?",
-          answer: "요리고는 iOS App Store와 Google Play 스토어 모두에서 이용할 수 있습니다. 출시 알림을 받으려면 대기자 명단에 등록하세요!"
+          answer: "아직은 앱이 개발중에 있으며, 내부 베타를 거쳐 오픈 베타를 곧 출시할 예정입니다! 출시 알림을 받으려면 대기자 명단에 등록하세요!"
         },
         {
           question: "요리고에서 장바구니는 어떻게 작동하나요?",
           answer: "레시피를 저장하면 요리고가 필요한 모든 재료가 포함된 장보기 목록을 자동으로 생성합니다. 수량을 조정하고, 쇼핑할 때 항목을 체크하고, 다른 사람과 목록을 공유할 수도 있습니다."
         },
-        {
-          question: "요리고에서 레시피를 편집할 수 있나요?",
-          answer: "물론입니다! 재료를 조정하고, 제공량을 변경하고, 메모를 추가하거나, 요리 지침을 수정하여 원하는 대로 레시피를 맞춤 설정할 수 있습니다."
-        }
       ]
     }
   }

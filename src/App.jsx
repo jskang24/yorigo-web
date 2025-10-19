@@ -40,7 +40,13 @@ function App() {
           <div className="hero-text">
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
-            <a href="https://www.youtube.com/watch?v=FEcT02I3IYA" target="_blank" rel="noopener noreferrer" className="cta-button">{t.hero.cta}</a>
+            <div className="hero-buttons">
+              <a href="https://www.youtube.com/watch?v=FEcT02I3IYA" target="_blank" rel="noopener noreferrer" className="cta-button">{t.hero.cta}</a>
+              <a href="https://drive.google.com/file/d/1l1c7_TnGwY9iymKBisZzrdoaOz-5uOmL/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">{t.hero.pitchDeck}</a>
+            </div>
+            <div className="hero-buttons-second-row">
+              <a href="https://getwaitlist.com/waitlist/31599" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">{t.hero.waitlist}</a>
+            </div>
           </div>
           <div className="hero-image">
             <div className="phone-mockup">
@@ -176,19 +182,24 @@ function App() {
         <p className="section-subtitle">{t.ourValue.subtitle}</p>
         <div className="values-container">
           <div className="value-card">
-            <div className="value-icon">🎯</div>
+            <div className="value-icon">📱</div>
             <h3 className="value-title">{t.ourValue.value1Title}</h3>
             <p className="value-text">{t.ourValue.value1Text}</p>
           </div>
           <div className="value-card">
-            <div className="value-icon">✨</div>
+            <div className="value-icon">🤖</div>
             <h3 className="value-title">{t.ourValue.value2Title}</h3>
             <p className="value-text">{t.ourValue.value2Text}</p>
           </div>
           <div className="value-card">
-            <div className="value-icon">💚</div>
+            <div className="value-icon">📋</div>
             <h3 className="value-title">{t.ourValue.value3Title}</h3>
             <p className="value-text">{t.ourValue.value3Text}</p>
+          </div>
+          <div className="value-card">
+            <div className="value-icon">🛒</div>
+            <h3 className="value-title">{t.ourValue.value4Title}</h3>
+            <p className="value-text">{t.ourValue.value4Text}</p>
           </div>
         </div>
       </section>
