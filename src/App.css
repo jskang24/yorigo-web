@@ -1,0 +1,846 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #FF861C 0%, #FFA94D 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-button {
+  background-color: #262626;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+  position: relative;
+}
+
+/* Volume buttons on the left side */
+.hero-image .phone-mockup .volume-up,
+.hero-image .phone-mockup .volume-down,
+.hero-image .phone-mockup .mute-switch {
+  position: absolute;
+  left: -4px;
+  width: 4px;
+  background: linear-gradient(to left, #0a0a0a, #1a1a1a);
+  border-radius: 2px 0 0 2px;
+  box-shadow: -1px 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image .phone-mockup .mute-switch {
+  top: 100px;
+  height: 30px;
+}
+
+.hero-image .phone-mockup .volume-up {
+  top: 150px;
+  height: 50px;
+}
+
+.hero-image .phone-mockup .volume-down {
+  top: 210px;
+  height: 50px;
+}
+
+/* Add a ground shadow/reflection effect */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  width: 200px;
+  height: 30px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.phone-mockup {
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #0a0a0a 100%);
+  border-radius: 48px;
+  padding: 10px;
+  box-shadow: 
+    0 50px 100px rgba(0, 0, 0, 0.5),
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transform: rotateY(-15deg) rotateX(5deg);
+  transition: transform 0.5s ease;
+  border: 3px solid #1a1a1a;
+}
+
+.phone-mockup:hover {
+  transform: rotateY(-10deg) rotateX(2deg) translateY(-10px);
+}
+
+/* Side buttons */
+.phone-mockup::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 140px;
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Dynamic Island */
+.phone-mockup::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 26px;
+  background: #000;
+  border-radius: 18px;
+  z-index: 10;
+  box-shadow: 
+    0 4px 10px rgba(0, 0, 0, 0.8),
+    inset 0 1px 2px rgba(255, 255, 255, 0.05);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #262626;
+  overflow: hidden;
+  box-shadow: 
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.phone-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Section Styles */
+.section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #262626;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Discover Section */
+.discover-section {
+  background-color: white;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-placeholder {
+  background: linear-gradient(135deg, #E5E5E5 0%, #D0D0D0 100%);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  padding: 2rem;
+  font-weight: 500;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card-image-placeholder::after {
+  content: '📱';
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.2;
+  transform: rotateY(-20deg);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #262626;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 1.5rem 1.5rem;
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: white;
+  padding: 0;
+  max-width: 100%;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding: 6rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.benefit-item:nth-child(even) {
+  background-color: #FFF8E9;
+}
+
+.benefit-item:nth-child(odd) {
+  background-color: white;
+}
+
+.benefit-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.benefit-label {
+  color: #FF861C;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.benefit-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.benefit-description {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.benefit-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  perspective: 1500px;
+  position: relative;
+}
+
+/* Volume buttons for benefit section phones */
+.benefit-image .phone-mockup .volume-up,
+.benefit-image .phone-mockup .volume-down,
+.benefit-image .phone-mockup .mute-switch {
+  position: absolute;
+  left: -4px;
+  width: 4px;
+  background: linear-gradient(to left, #0a0a0a, #1a1a1a);
+  border-radius: 2px 0 0 2px;
+  box-shadow: -1px 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.benefit-image .phone-mockup .mute-switch {
+  top: 100px;
+  height: 30px;
+}
+
+.benefit-image .phone-mockup .volume-up {
+  top: 150px;
+  height: 50px;
+}
+
+.benefit-image .phone-mockup .volume-down {
+  top: 210px;
+  height: 50px;
+}
+
+.benefit-item:nth-child(odd) .phone-mockup {
+  transform: rotateY(-15deg) rotateX(5deg);
+}
+
+.benefit-item:nth-child(even) .phone-mockup {
+  transform: rotateY(15deg) rotateX(5deg);
+}
+
+.benefit-item .phone-mockup:hover {
+  transform: rotateY(0deg) rotateX(2deg) translateY(-10px) scale(1.02);
+}
+
+/* Phone Screen Content Styles */
+.recipe-content {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 0.7rem;
+}
+
+.recipe-header {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recipe-steps-list {
+  margin-bottom: 1.5rem;
+}
+
+.step-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  font-size: 0.65rem;
+  line-height: 1.4;
+}
+
+.step-number {
+  background: #FF861C;
+  color: white;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+}
+
+.step-text {
+  color: #262626;
+  flex: 1;
+}
+
+.nutrition-info {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nutrition-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.nutrition-item {
+  text-align: center;
+}
+
+.nutrition-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #262626;
+}
+
+.nutrition-label {
+  font-size: 0.65rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Recipe Detail Content */
+.recipe-detail-content {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 0.7rem;
+}
+
+.recipe-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  font-size: 0.8rem;
+  color: #262626;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #FF861C;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.recipe-detail-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-detail-meta {
+  font-size: 0.65rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.video-placeholder {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  background: #FF861C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.video-text {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.serving-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.counter button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.counter span {
+  font-weight: 600;
+}
+
+.ingredients-list {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ingredient-item:last-child {
+  border-bottom: none;
+}
+
+.ingredient-icon {
+  font-size: 1rem;
+}
+
+.ingredient-name {
+  flex: 1;
+  font-size: 0.7rem;
+  color: #262626;
+}
+
+.ingredient-amount {
+  font-size: 0.65rem;
+  color: #666;
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.placeholder-content span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-content p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Our Value Section */
+.our-value-section {
+  background-color: white;
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: #FFF8E9;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.value-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: white;
+  padding: 6rem 2rem;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #E5E5E5;
+  transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #262626;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #FF861C;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  color: #666;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-icon.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding-bottom: 2rem;
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #262626;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .benefit-item,
+  .benefit-item-reverse {
+    flex-direction: column !important;
+    gap: 3rem;
+    padding: 4rem 2rem;
+  }
+
+  .benefit-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .benefit-title {
+    font-size: 2rem;
+  }
+
+  .benefit-item:nth-child(odd) .phone-mockup,
+  .benefit-item:nth-child(even) .phone-mockup {
+    transform: rotateY(0deg) rotateX(5deg);
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .phone-mockup {
+    width: 250px;
+    height: 500px;
+  }
+
+  .benefit-item,
+  .benefit-item-reverse {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .benefit-title {
+    font-size: 1.75rem;
+  }
+
+  .benefit-description {
+    font-size: 1rem;
+  }
+
+  .cards-container,
+  .values-container {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .faq-answer.open {
+    padding-bottom: 1.5rem;
+  }
+}
