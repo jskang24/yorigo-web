@@ -40,10 +40,6 @@ function App() {
           <div className="hero-text">
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
-            <div className="hero-buttons">
-              <a href="https://www.youtube.com/watch?v=FEcT02I3IYA" target="_blank" rel="noopener noreferrer" className="cta-button">{t.hero.cta}</a>
-              <a href="https://drive.google.com/file/d/1l1c7_TnGwY9iymKBisZzrdoaOz-5uOmL/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">{t.hero.pitchDeck}</a>
-            </div>
             <div className="hero-buttons-second-row">
               <a href="https://getwaitlist.com/waitlist/31599" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">{t.hero.waitlist}</a>
             </div>
