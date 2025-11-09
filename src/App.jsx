@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { translations } from './translations';
-import yorigoHome from './assets/Yorigo_home.png';
-import yorigoRecipes from './assets/Yorigo_recipes.png';
-import yorigoCart from './assets/Yorigo_cart.png';
+import yorigoMain from './assets/IMG_1279.PNG';
+import yorigoBlurred2 from './assets/blurred_yorigo_2.png';
+import yorigoBlurred1 from './assets/blurred_yorigo_1.jpg';
 import './App.css';
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <img src={yorigoHome} alt="Yorigo App Home Screen" className="phone-screenshot" />
+                <img src={yorigoMain} alt="Yorigo App Home Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <img src={yorigoHome} alt="Yorigo Home Screen" className="phone-screenshot" />
+                <img src={yorigoMain} alt="Yorigo Home Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <img src={yorigoRecipes} alt="Yorigo Recipes Screen" className="phone-screenshot" />
+                <img src={yorigoBlurred2} alt="Yorigo Recipes Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@ function App() {
               <div className="volume-up"></div>
               <div className="volume-down"></div>
               <div className="phone-screen">
-                <img src={yorigoCart} alt="Yorigo Shopping Cart Screen" className="phone-screenshot" />
+                <img src={yorigoBlurred1} alt="Yorigo Shopping Cart Screen" className="phone-screenshot" />
               </div>
             </div>
           </div>

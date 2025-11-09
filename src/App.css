@@ -9,13 +9,19 @@
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #FF861C 0%, #FFA94D 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6rem 2rem 4rem;
+  padding: 8rem 2rem 4rem;
 }
 
 .hero-content {
@@ -139,8 +145,8 @@
 }
 
 .phone-mockup {
-  width: 300px;
-  height: 600px;
+  width: 340px;
+  height: 680px;
   background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #0a0a0a 100%);
   border-radius: 48px;
   padding: 10px;
@@ -211,8 +217,9 @@
 .phone-screenshot {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center top;
+  transform: translateY(0px);
 }
 
 /* Section Styles */
@@ -244,8 +251,14 @@
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
 .problem-solution-card {
@@ -868,13 +881,23 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
+  .hero-section {
+    padding: 7rem 2rem 3rem;
+    min-height: auto;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
+    gap: 3rem;
   }
 
   .hero-title {
     font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
   }
 
   .benefit-item,
@@ -901,37 +924,142 @@
   .values-container {
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
+  }
+
+  .value-card {
+    max-width: 400px;
+    width: 100%;
   }
 
   .value-card::after {
     content: '↓';
     right: 50%;
     top: auto;
-    bottom: -2.5rem;
+    bottom: -2rem;
     transform: translateX(50%);
   }
 
   .section {
-    padding: 3rem 1.5rem;
+    padding: 4rem 2rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.375rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 6.5rem 1.5rem 2.5rem;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .hero-subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .cta-button {
+    padding: 0.875rem 2rem;
     font-size: 1rem;
+  }
+
+  .phone-mockup {
+    width: 320px;
+    height: 640px;
+  }
+
+  .section {
+    padding: 3.5rem 1.5rem;
   }
 
   .section-title {
     font-size: 2rem;
   }
 
+  .benefit-title {
+    font-size: 1.875rem;
+  }
+
+  .benefit-description {
+    font-size: 1.0625rem;
+  }
+
+  .value-title {
+    font-size: 1.25rem;
+  }
+
+  .value-text {
+    font-size: 0.9rem;
+  }
+
+  .faq-question {
+    font-size: 1.125rem;
+    padding: 1.75rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons,
+  .hero-buttons-second-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
   .phone-mockup {
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 600px;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .benefit-item,
@@ -940,17 +1068,62 @@
     gap: 2rem;
   }
 
+  .benefit-label {
+    font-size: 1rem;
+  }
+
   .benefit-title {
     font-size: 1.75rem;
+    margin-bottom: 1rem;
   }
 
   .benefit-description {
     font-size: 1rem;
   }
 
-  .cards-container,
+  .cards-container {
+    gap: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .problem-text,
+  .solution-text {
+    font-size: 0.9375rem;
+  }
+
+  .card-problem,
+  .card-solution {
+    padding: 2rem 1.5rem;
+  }
+
   .values-container {
-    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .value-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .value-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .value-title {
+    font-size: 1.125rem;
+  }
+
+  .value-text {
+    font-size: 0.875rem;
+  }
+
+  .faq-section {
+    padding: 4rem 1.5rem;
   }
 
   .faq-question {
@@ -960,5 +1133,146 @@
 
   .faq-answer.open {
     padding-bottom: 1.5rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 5.5rem 1rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .phone-mockup {
+    width: 280px;
+    height: 560px;
+  }
+
+  /* Adjust Dynamic Island for smaller phones */
+  .phone-mockup::before {
+    width: 80px;
+    height: 24px;
+    top: 16px;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9375rem;
+    margin-bottom: 2rem;
+  }
+
+  .benefit-item,
+  .benefit-item-reverse {
+    padding: 2.5rem 1rem;
+    gap: 1.75rem;
+  }
+
+  .benefit-label {
+    font-size: 0.9375rem;
+  }
+
+  .benefit-title {
+    font-size: 1.5rem;
+  }
+
+  .benefit-description {
+    font-size: 0.9375rem;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .problem-text,
+  .solution-text {
+    font-size: 0.875rem;
+  }
+
+  .card-problem,
+  .card-solution {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .solution-label {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .arrow-divider svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .values-container {
+    gap: 2rem;
+  }
+
+  .value-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .value-card::after {
+    font-size: 1.5rem;
+    bottom: -1.5rem;
+  }
+
+  .value-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .value-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .value-text {
+    font-size: 0.8125rem;
+  }
+
+  .faq-section {
+    padding: 3rem 1rem;
+  }
+
+  .faq-question {
+    font-size: 0.9375rem;
+    padding: 1.25rem 0;
+  }
+
+  .faq-icon {
+    margin-left: 0.5rem;
+  }
+
+  .faq-answer.open {
+    padding-bottom: 1.25rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.875rem;
   }
 }
