@@ -76,7 +76,9 @@ body {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .cta-button:hover {
@@ -94,6 +96,12 @@ body {
 .cta-button-secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: white;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .hero-image {

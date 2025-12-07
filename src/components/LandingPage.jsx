@@ -4,6 +4,7 @@ import { translations } from '../translations';
 import yorigoMain from '../assets/IMG_1279.PNG';
 import yorigoBlurred2 from '../assets/blurred_yorigo_2.png';
 import yorigoBlurred1 from '../assets/blurred_yorigo_1.jpg';
+import instagramIcon from '../assets/instagram-app-icon-hd.png';
 import '../App.css';
 
 function LandingPage() {
@@ -41,7 +42,10 @@ function LandingPage() {
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
             <div className="hero-buttons-second-row">
-              <a href="https://getwaitlist.com/waitlist/31599" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">{t.hero.waitlist}</a>
+              <a href="https://www.instagram.com/yorigo.kr" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">
+                <img src={instagramIcon} alt="Instagram" className="instagram-icon" />
+                {t.hero.waitlist}
+              </a>
             </div>
           </div>
           <div className="hero-image">

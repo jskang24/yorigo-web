@@ -12,7 +12,7 @@ export const translations = {
       subtitle: "Yorigo brings smart meal planning, cost-savvy shopping, and effortless cooking to every home kitchen.",
       cta: "See Demo",
       pitchDeck: "Pitch Deck",
-      waitlist: "Join Waitlist"
+      waitlist: "Follow Us on Instagram"
     },
     discover: {
       title: "Why Yorigo?",
@@ -83,7 +83,7 @@ export const translations = {
       subtitle: "요리고는 모든 가정의 주방에 스마트한 식단 계획, 가성비 높은 장보기, 그리고 손쉬운 요리법을 제공합니다.",
       cta: "데모 보기",
       pitchDeck: "피치덱",
-      waitlist: "베타 테스터 등록"
+      waitlist: "인스타그램 팔로우"
     },
     discover: {
       title: "왜 요리고인가?",
