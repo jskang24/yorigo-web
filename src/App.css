@@ -1043,12 +1043,14 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 0.75rem;
+    align-items: center;
   }
 
   .cta-button {
     width: 100%;
     padding: 0.875rem 1.5rem;
     font-size: 0.95rem;
+    justify-content: center;
   }
 
   .phone-mockup {
@@ -1164,6 +1166,7 @@ body {
   .cta-button {
     padding: 0.8rem 1.25rem;
     font-size: 0.9rem;
+    justify-content: center;
   }
 
   .phone-mockup {
