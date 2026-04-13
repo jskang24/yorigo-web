@@ -5,10 +5,11 @@ export const translations = {
       discover: "Why Us?",
       benefits: "Benefits",
       story: "How?",
-      faq: "FAQ"
+      faq: "FAQ",
+      support: "Support"
     },
     hero: {
-      title: "Eat What You See",
+      title: "Fastest way to start your cooking journey",
       subtitle: "Yorigo brings smart meal planning, cost-savvy shopping, and effortless cooking to every home kitchen.",
       cta: "See Demo",
       pitchDeck: "Pitch Deck",
@@ -68,6 +69,14 @@ export const translations = {
           answer: "When you save a recipe, Yorigo automatically generates a shopping list with all the ingredients you need. You can adjust quantities, check off items as you shop, and even share the list with others."
         }
       ]
+    },
+    support: {
+      title: "Support",
+      intro: "For questions, feedback, or help with Yorigo, please contact us using the information below.",
+      nameLabel: "Contact",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
+      addressLabel: "Address"
     }
   },
   ko: {
@@ -76,10 +85,11 @@ export const translations = {
       discover: "Why Us?",
       benefits: "Benefits",
       story: "How?",
-      faq: "FAQ"
+      faq: "FAQ",
+      support: "고객 지원"
     },
     hero: {
-      title: "보이는 그대로 식탁에",
+      title: "요리를 가장 쉽게 시작하는 방법",
       subtitle: "요리고는 모든 가정의 주방에 스마트한 식단 계획, 가성비 높은 장보기, 그리고 손쉬운 요리법을 제공합니다.",
       cta: "데모 보기",
       pitchDeck: "피치덱",
@@ -139,6 +149,14 @@ export const translations = {
           answer: "레시피를 저장하면 요리고가 필요한 모든 재료가 포함된 장보기 목록을 자동으로 생성합니다. 수량을 조정하고, 쇼핑할 때 항목을 체크하고, 다른 사람과 목록을 공유할 수도 있습니다."
         },
       ]
+    },
+    support: {
+      title: "고객 지원",
+      intro: "요리고 관련 문의, 의견 또는 도움이 필요하시면 아래 연락처로 연락해 주세요.",
+      nameLabel: "담당자",
+      emailLabel: "이메일",
+      phoneLabel: "전화",
+      addressLabel: "주소"
     }
   }
 };
