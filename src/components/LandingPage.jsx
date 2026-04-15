@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { translations } from '../translations';
 import yorigoMain from '../assets/IMG_1279.PNG';
@@ -229,7 +230,18 @@ function LandingPage() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2025 Yorigo. All rights reserved.</p>
+          <nav className="footer-legal" aria-label={t.footer.legalNavLabel}>
+            <Link to="/privacy" className="footer-link">
+              {t.footer.privacy}
+            </Link>
+            <span className="footer-legal-sep" aria-hidden="true">
+              |
+            </span>
+            <Link to="/support" className="footer-link">
+              {t.footer.support}
+            </Link>
+          </nav>
+          <p className="footer-copy">&copy; 2025 Yorigo. All rights reserved.</p>
         </div>
       </footer>
     </div>

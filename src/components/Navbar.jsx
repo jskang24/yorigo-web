@@ -67,6 +67,12 @@ const Navbar = ({ translations, language, toggleLanguage }) => {
     setIsMobileMenuOpen(false);
   };
 
+  const goToPrivacy = () => {
+    navigate('/privacy');
+    window.scrollTo(0, 0);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
@@ -100,6 +106,9 @@ const Navbar = ({ translations, language, toggleLanguage }) => {
             </button>
             <button onClick={() => scrollToSection('faq')} className="nav-link">
               {translations.nav.faq}
+            </button>
+            <button type="button" onClick={goToPrivacy} className="nav-link">
+              {translations.nav.privacy}
             </button>
             <button type="button" onClick={goToSupport} className="nav-link">
               {translations.nav.support}

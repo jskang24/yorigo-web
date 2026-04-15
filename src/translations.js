@@ -6,7 +6,19 @@ export const translations = {
       benefits: "Benefits",
       story: "How?",
       faq: "FAQ",
+      privacy: "Privacy",
       support: "Support"
+    },
+    footer: {
+      legalNavLabel: "Legal",
+      privacy: "Privacy Policy",
+      support: "Support"
+    },
+    privacyPage: {
+      title: "Privacy Policy",
+      intro:
+        "The full privacy policy is published on Notion. Open it in a new tab using the button below.",
+      openNotion: "Open full policy (Notion)"
     },
     hero: {
       title: "Fastest way to start your cooking journey",
@@ -86,7 +98,18 @@ export const translations = {
       benefits: "Benefits",
       story: "How?",
       faq: "FAQ",
+      privacy: "개인정보처리방침",
       support: "고객 지원"
+    },
+    footer: {
+      legalNavLabel: "법적 정보",
+      privacy: "개인정보처리방침",
+      support: "고객 지원"
+    },
+    privacyPage: {
+      title: "개인정보처리방침",
+      intro: "개인정보처리방침 전문은 Notion에서 제공합니다. 아래 버튼으로 새 탭에서 확인하세요.",
+      openNotion: "전체 문서 보기 (Notion)"
     },
     hero: {
       title: "요리를 가장 쉽게 시작하는 방법",
