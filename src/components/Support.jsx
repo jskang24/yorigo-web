@@ -8,8 +8,8 @@ const CONTACT = {
   email: 'yorigoadm@gmail.com',
   phoneDisplay: '010-2131-6179',
   phoneTel: '+821021316179',
-  addressKo: '서울 서대문구 남가좌동 5-190 202호',
-  addressEn: 'Room 202, 5-190 Namgajwa-dong, Seodaemun-gu, Seoul, Republic of Korea',
+  addressKo: '경기도 김포시 풍무1로 69 4층 4148호',
+  addressEn: 'Room 4148, 4th Floor, 69 Pungmu 1-ro, Gimpo-si, Gyeonggi-do, Republic of Korea',
 };
 
 const Support = ({ language, toggleLanguage }) => {
